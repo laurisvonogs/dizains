@@ -2,193 +2,209 @@
 <html>
 
 <head>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
 
-        li {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px 14px 16px;
-            text-decoration: none;
-            font-size: 20px;
-        }
+    li {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
 
-        .logo {
-            float: left;
-            padding: 14px 16px 14px 16px;
-        }
+    .logo {
+      float: left;
+      padding: 14px 16px 14px 16px;
+    }
 
-        li:hover {
-            background-color: rgb(18, 3, 104);
-            text-decoration: underline;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.5s;
-        }
+    .topnav-right {
+      float: right;
+    }
 
-        .topnav-right {
-            float: right;
-        }
+    .user:hover {
+      background-color: rgb(18, 3, 104);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
 
-        .user:hover {
-            background-color: rgb(18, 3, 104);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.5s;
-        }
+    .userimg {
+      padding-left: 16px;
+      padding-right: 5px;
+      border-radius: 50%;
+    }
 
-        .userimg {
-            padding-left: 16px;
-            padding-right: 5px;
-            border-radius: 50%;
-        }
+    .navbar {
+      background-image: linear-gradient(180deg, rgb(70, 142, 250), rgb(64, 64, 248));
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+    }
 
-        .navbar {
-            background-image: linear-gradient(180deg, rgb(70, 142, 250), rgb(64, 64, 248));
-            position: fixed;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-        }
+    .v-line {
+      border-right: 6px solid rgb(255, 255, 255);
+      display: inline-block;
+    }
 
-        .v-line {
-            border-right: 6px solid rgb(255, 255, 255);
-            display: inline-block;
-        }
-        
-        .languages{
-            display: inline-block;
-            border-left: 6px solid rgb(255, 255, 255);
-            border-right: 6px solid rgb(255, 255, 255);
-            border-radius: 50%;
-        }
-        
-        .languages li{
-          border-radius: 100%;
-        }
-    </style>
+    .languages {
+      display: inline-block;
+      border-left: 6px solid rgb(255, 255, 255);
+      border-right: 6px solid rgb(255, 255, 255);
+      border-radius: 50%;
+    }
+
+    .languages li:hover {
+      cursor: pointer;
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+
+    .navBarMenu {
+      display: inline-block;
+    }
+
+    .navBarMenu li:hover {
+      background-color: rgb(18, 3, 104);
+      text-decoration: underline;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+  </style>
 </head>
 
 <body style="background-color:lightgrey;">
 
-    <div class="navbar">
-        <ul>
-            <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
-            <div class="topnav-right">
-                <li>Other stuff</li>
-                <li>Other stuff</li>
-                <li>Specsemināri</li>
-                <li>Other stuff</li>
-                <div class="languages">
-                    <li>LV</li>
-                    <li>ENG</li>
-                    <li>RU</li>
-                </div>
-                <div class="user" style="float: right;">
-                    <img class="userimg" src="images/img_avatar.png" width="45">
-                    <li style="float: right;">Jānis Bērziņš</li>
-                </div>
-            </div>
-        </ul>
-    </div>
+  <div class="navbar">
+    <ul>
+      <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
+      <div class="topnav-right">
+        <div class="navBarMenu">
+          <li>Other stuff</li>
+          <li>Other stuff</li>
+          <li>Specsemināri</li>
+          <li>Other stuff</li>
+        </div>
+        <div class="languages">
+          <li>LV</li>
+          <li>ENG</li>
+          <li>RU</li>
+        </div>
+        <div class="user" style="float: right;">
+          <img class="userimg" src="images/img_avatar.png" width="45">
+          <li style="float: right;">Jānis Bērziņš</li>
+        </div>
+      </div>
+    </ul>
+  </div>
 
-    <br>
-    <br>
-	<br>
+  <br>
+  <br>
+  <br>
 
-    <div>
-		<table id="spec">
-		  <tr>
-			<th>Kods</th>
-			<th>Specsemināra nosaukums</th>
-			<th>Docētājs</th>
-			<th>Info</th>
-			<th>Statuss</th>
-			<th>Reģistrēšanās</th>
-		  </tr>
-		  <tr>
-			<td>1</td>
-			<td>Specseminārs1</td>
-			<td>Lāsma</td>
-			<td>PRESS HERE TODO</td>
-			<td>SHOW STATUS TODO</td>
-			<td>REGISTER TODO</td>
-		  </tr>
-		  <tr>
-			<td>2</td>
-			<td>Specseminārs2</td>
-			<td>Gregors</td>
-			<td>PRESS HERE TODO</td>
-			<td>SHOW STATUS TODO</td>
-			<td>REGISTER TODO</td>
-		  </tr>
-		  <tr>
-			<td>3</td>
-			<td>Specseminārs3</td>
-			<td>Ahmed</td>
-			<td>PRESS HERE TODO</td>
-			<td>SHOW STATUS TODO</td>
-			<td>REGISTER TODO</td>
-		  </tr>
-		</table>
-    </div>
+  <div>
+    <table id="spec">
+      <tr>
+        <th>Kods</th>
+        <th>Specsemināra nosaukums</th>
+        <th>Docētājs</th>
+        <th>Info</th>
+        <th>Statuss</th>
+        <th>Reģistrēšanās</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Specseminārs1</td>
+        <td>Lāsma</td>
+        <td>PRESS HERE TODO</td>
+        <td>SHOW STATUS TODO</td>
+        <td>REGISTER TODO</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Specseminārs2</td>
+        <td>Gregors</td>
+        <td>PRESS HERE TODO</td>
+        <td>SHOW STATUS TODO</td>
+        <td>REGISTER TODO</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Specseminārs3</td>
+        <td>Ahmed</td>
+        <td>PRESS HERE TODO</td>
+        <td>SHOW STATUS TODO</td>
+        <td>REGISTER TODO</td>
+      </tr>
+    </table>
+  </div>
 
-	<footer class="bottom">
-	  <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
-	  <p class="oneLine">SOME LINK1
-	  <a href="www.google.lv">link</a></p>
-	  
-	  <p class="oneLine">SOME LINK1
-	  <a href="www.google.lv">link</a></p>
-	  
-	  <p class="oneLine">SOME LINK1
-	  <a href="www.google.lv">link</a></p>
-	</footer>
+  <footer class="bottom">
+    <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
+    <p class="oneLine">SOME LINK1
+      <a href="www.google.lv">link</a>
+    </p>
+
+    <p class="oneLine">SOME LINK1
+      <a href="www.google.lv">link</a>
+    </p>
+
+    <p class="oneLine">SOME LINK1
+      <a href="www.google.lv">link</a>
+    </p>
+  </footer>
 
 
 
-    <style>
-	
-		.oneLine {
-			display: inline-block;
-			padding-left: 50px;
-		}
-	
-		.bottom {
-			position: fixed;
-			bottom: 0;
-		}
-	
-		#spec {
-		  font-family: Arial, Helvetica, sans-serif;
-		  border-collapse: collapse;
-		  width: 100%;
-		}
+  <style>
+    .oneLine {
+      display: inline-block;
+      padding-left: 50px;
+    }
 
-		#spec td, #spec th {
-		  border: 1px solid #ddd;
-		  padding: 8px;
-		}
+    .bottom {
+      position: fixed;
+      bottom: 0;
+    }
 
-		#spec tr:nth-child(even){background-color: #aec1d4;}
+    #spec {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-		#spec tr:hover {background-color: #ddd;}
+    #spec td,
+    #spec th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
 
-		#spec th {
-		  padding-top: 12px;
-		  padding-bottom: 12px;
-		  text-align: left;
-		  background-color: #4c8cc7;
-		  color: white;
-		}
-    </style>
+    #spec tr:nth-child(even) {
+      background-color: #aec1d4;
+    }
+
+    #spec tr:hover {
+      background-color: #ddd;
+    }
+
+    #spec th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4c8cc7;
+      color: white;
+    }
+  </style>
 
 </body>
 
