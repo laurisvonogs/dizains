@@ -3,6 +3,114 @@
 
 <head>
   <style>
+    @media only screen and (min-width: 1500px) and (max-width: 1750px) {
+      li {
+        font-size: 15px;
+      }
+
+      .navBarMenu {
+        display: inline-block;
+      }
+
+      .navBarMenu li:hover {
+        background-color: rgb(18, 3, 104);
+        text-decoration: underline;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .submenu {
+        display: none;
+      }
+      .menu-button{
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 1750px) {
+      li {
+        font-size: 20px;
+      }
+
+      .navBarMenu {
+        display: inline-block;
+      }
+
+      .navBarMenu li:hover {
+        background-color: rgb(18, 3, 104);
+        text-decoration: underline;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .submenu {
+        display: none;
+      }
+      .menu-button{
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 1500px) {
+      .navBarMenu {
+        display: none;
+      }
+
+      .menu {
+        mix-blend-mode: multiply;
+      }
+
+      .submenu {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-image: linear-gradient(180deg,rgb(64, 64, 248), rgb(0, 0, 255));
+        /*background-color: rgb(46, 25, 138);*/
+        width: 100%;
+        z-index: 1;
+      }
+
+      .submenu li:hover {
+        background-color: rgb(88, 68, 189);
+        border-radius: 10px;
+      }
+
+      .submenu a {
+        float: left;
+        color: white;
+        text-decoration: none;
+      }
+
+      .submenu a:hover {
+        background-color: #eee;
+        color: black;
+      }
+
+      .menu-div:hover .submenu {
+        display: block;
+      }
+      .menu-button{
+        background: transparent;
+        border: 0;
+      }
+    }
+
+    @media only screen and (max-width: 550px) {
+      .logo {
+        display: none;
+      }
+    }
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -17,7 +125,6 @@
       text-align: center;
       padding: 14px 16px 14px 16px;
       text-decoration: none;
-      font-size: 20px;
     }
 
     .logo {
@@ -69,18 +176,6 @@
       transform: scale(1.3);
     }
 
-    .navBarMenu {
-      display: inline-block;
-    }
-
-    .navBarMenu li:hover {
-      background-color: rgb(18, 3, 104);
-      text-decoration: underline;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.5s;
-    }
-
     .speceminari {
       background-color: rgb(18, 3, 104);
       border-radius: 10px;
@@ -93,13 +188,28 @@
   <div class="navbar">
     <ul>
       <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
+      <button type="submit" class="menu-button">
+        <div class="menu-div">
+          <img class="menu" src="images/menu.png" alt="LU logo" height="45">
+          <ul class="submenu">
+            <li>Studiju dati</li>
+            <li>Studiju plāns</li>
+            <li>Lekciju saraksts</li>
+            <li>Sekmes</li>
+            <li class="speceminari">Specsemināri</li>
+            <li>Kursi</li>
+            <li>Dienesta viesnīca</li>
+            <li>Maksājumi</li>
+            <li>Rotācijas rezultāti</li>
+          </ul>
+        </div>
+      </button>
       <div class="topnav-right">
         <div class="navBarMenu">
           <li>Studiju dati</li>
           <li>Studiju plāns</li>
-          <li>Lekciju sarakts</li>
+          <li>Lekciju saraksts</li>
           <li>Sekmes</li>
-          <li>Rīkojumi</li>
           <li class="speceminari">Specsemināri</li>
           <li>Kursi</li>
           <li>Dienesta viesnīca</li>
