@@ -31,3 +31,10 @@ window.onclick = function(e){
     modal.style.display = "none"
   }
 }
+
+/* SPECSEMINARU INFO POPUP SCRIPT */
+
+document.getElementById("saveForm").addEventListener("click", openSeminarInfo);
+function openSeminarInfo(){
+    modal.style.display = "block"
+}
