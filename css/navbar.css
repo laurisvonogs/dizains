@@ -9,7 +9,6 @@
 
     .navBarMenu li:hover {
       background-color: rgb(18, 3, 104);
-      text-decoration: underline;
       border-radius: 10px;
       cursor: pointer;
       transition: all 0.5s;
@@ -39,7 +38,6 @@
 
     .navBarMenu li:hover {
       background-color: rgb(18, 3, 104);
-      text-decoration: underline;
       border-radius: 10px;
       cursor: pointer;
       transition: all 0.5s;
