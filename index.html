@@ -6,6 +6,7 @@
   <link rel="icon" href="images/lu_logo.png">
   <link rel="stylesheet" href="css/navbar.css">
   <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body style="background-color:lightgrey;">
@@ -45,7 +46,7 @@
           <li>ENG</li>
           <li>RU</li>
         </div>
-        <div class="user" style="float: right;">
+        <div id="modal-btn" class="user" style="float: right;">
           <img class="userimg" src="images/img_avatar.png" width="45">
           <li style="float: right;">Jānis Bērziņš</li>
         </div>
@@ -302,7 +303,12 @@
     </footer>
   </div>
 
-
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p>this is the text inside the modal</p>
+    </div>
+  </div>
 
   <style>
     button {
@@ -364,7 +370,7 @@
       color: white;
     }
   </style>
-
+  <script type="text/javascript" src="default.js"></script>
 </body>
 
 </html>
