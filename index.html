@@ -288,19 +288,15 @@
 
   <div>
     <footer class="bottom">
-      <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
-      <p class="oneLine">SOME LINK1
-        <a href="www.google.lv">link</a>
-      </p>
-
-      <p class="oneLine">SOME LINK2
-        <a href="www.google.lv">link</a>
-      </p>
-
-      <p class="oneLine">SOME LINK3
-        <a href="www.google.lv">link</a>
-      </p>
+      <br>
+      <a class="oneLine" href="">LU</a>
+      <a class="oneLine" href="">Studentu serviss</a>
+      <a class="oneLine" href="">E-studijas</a>
+      <a class="oneLine" href="">LUIS</a>
+      <a class="oneLine" href="">LU e-pasts</a>
+      <a class="oneLine" href="">Iekšējās kārtības noteikumi studējošiem</a>
     </footer>
+    <br>
   </div>
 
   <div class="modal">
@@ -334,8 +330,23 @@
 
     .oneLine {
       display: inline-block;
-      padding-left: 300px;
-      /*< !-- TODO non static --> */
+      margin-right: 3px;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+    }
+
+    .oneLine:not(:last-child):after {
+      margin-left: 3px;
+      content: "|";
+    }
+
+    .oneLine:hover {
+      text-decoration: underline;
+    }
+
+    .bottom {
+      text-align: center;
     }
 
     #spec {
