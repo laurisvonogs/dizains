@@ -5,6 +5,7 @@
   <title>Specsemināri</title>
   <link rel="icon" href="images/lu_logo.png">
   <link rel="stylesheet" href="css/navbar.css">
+  <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 
 <body style="background-color:lightgrey;">
@@ -322,6 +323,17 @@
       color: white;
     }
   </style>
+	
+  <script>
+	  window.addEventListener("scroll", function() {
+		if (window.scrollY > 100) {
+			$('.navbar').fadeOut();
+		}
+		else {
+			$('.navbar').fadeIn();
+		}
+	},false);
+   </script>
 
 </body>
 
