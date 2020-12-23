@@ -309,7 +309,7 @@
 
     .column-user-2 {
       float: left;
-      width: 25%;
+      width: 50%;
     }
 
     .column-user a {
@@ -327,9 +327,10 @@
 
     #button-user {
       background-color: rgb(64, 64, 248);
+      width: 90%;
     }
 
-    #button-user a {
+    .user-switch button {
       color: white;
       font-size: 30px;
     }
@@ -356,14 +357,19 @@
           <p class="column-user-2">Datorikas</p>
         </div>
         <div class="column-user">
-          <button class="column-user-2" type="button" id="button-user">
-            <img class="userimg" src="images/img_avatar.png" width="30">
-            <a href="pasniedzejs.html" class="button">Pasniedzējs</a>
-          </button>
-          <button class="column-user-2" type="button" id="button-user">
-            <img class="userimg" src="images/img_avatar.png" width="30">
-            <a href="metodike.html" class="button">Metodiķe</a>
-          </button>
+          <div class="column-user-2">
+            <a href="pasniedzejs.html" class="user-switch">
+              <button type="button" id="button-user">
+                <img class="userimg" src="images/img_avatar.png" width="30">Pasniedzējs
+              </button>
+            </a>
+          </div>
+          <div class="column-user-2">
+            <a href="metodike.html" class="user-switch"><button type="button" id="button-user">
+                <img class="userimg" src="images/img_avatar.png" width="30">Metodiķe
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
