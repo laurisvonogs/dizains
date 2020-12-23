@@ -38,3 +38,17 @@ document.getElementById("saveForm").addEventListener("click", openSeminarInfo);
 function openSeminarInfo(){
     modal.style.display = "block"
 }
+/* Specseminaru registresanas poga */
+
+function registerToCourse(number) {
+  if (document.getElementById(`registration-status-${number}`).textContent == "Nav reģistrējies") {
+    document.getElementById(`registration-status-${number}`).innerHTML = "Reģistrējies";
+    document.getElementById(`button-${number}`).innerHTML = "Atteikties";
+    document.getElementById(`button-${number}`).style.backgroundColor = "red";
+  }
+  else {
+    document.getElementById(`registration-status-${number}`).innerHTML = "Nav reģistrējies";
+    document.getElementById(`button-${number}`).innerHTML = "Reģistrēties";
+    document.getElementById(`button-${number}`).style.backgroundColor = "#44c767";
+  }
+}
