@@ -45,10 +45,14 @@ function registerToCourse(number) {
     document.getElementById(`registration-status-${number}`).innerHTML = "Reģistrējies";
     document.getElementById(`button-${number}`).innerHTML = "Atteikties";
     document.getElementById(`button-${number}`).style.backgroundColor = "red";
+    var remaining = parseInt(document.getElementById(`remaining-${number}`).innerHTML);
+    document.getElementById(`remaining-${number}`).innerHTML = remaining - 1;
   }
   else {
     document.getElementById(`registration-status-${number}`).innerHTML = "Nav reģistrējies";
     document.getElementById(`button-${number}`).innerHTML = "Reģistrēties";
     document.getElementById(`button-${number}`).style.backgroundColor = "#44c767";
+    var remaining = parseInt(document.getElementById(`remaining-${number}`).innerHTML);
+    document.getElementById(`remaining-${number}`).innerHTML = remaining + 1;
   }
 }
