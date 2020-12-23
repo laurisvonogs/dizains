@@ -48,10 +48,13 @@
         </div>
         <div id="modal-btn" class="user" style="float: right;">
           <img class="userimg" src="images/img_avatar.png" width="45">
-          <li style="float: right;">Jānis Bērziņš</li>
+          <div style="float: right;">
+            <li>Jānis Bērziņš</li>
+            <li >Students</li>
         </div>
       </div>
-    </ul>
+  </div>
+  </ul>
   </div>
 
   <br>
@@ -275,7 +278,7 @@
     function registerToCourse(status, button) {
       if (document.getElementById(status).textContent == "Nav reģistrējies") {
         document.getElementById(status).innerHTML = "Reģistrējies";
-        document.getElementById(button).innerHTML = "Atreģistrēties";
+        document.getElementById(button).innerHTML = "Atteikties";
         document.getElementById(button).style.backgroundColor = "red";
       }
       else {
