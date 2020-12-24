@@ -31,13 +31,25 @@
     animation-name: animatetop;
     animation-duration: 0.4s
   }
-  .close-btn {
+  .close-btn{
     float: right; 
     color: lightgray; 
     font-size: 24px;  
     font-weight: bold;
   }
+  .close-btn-5 {
+    float: right; 
+    color: lightgray; 
+    font-size: 24px;  
+    font-weight: bold;
+  }
+
   .close-btn:hover {
+    color: darkgray;
+    cursor: pointer;
+  }
+
+  .close-btn-5:hover {
     color: darkgray;
     cursor: pointer;
   }

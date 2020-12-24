@@ -114,6 +114,10 @@ info4.onclick = function(){
 }
 let info5 = document.getElementById("info5");
 let modal5 = document.querySelector(".modal5");
+let closeBtn5 = document.querySelector(".close-btn-5");
+closeBtn5.onclick = function(){
+  modal5.style.display = "none"
+}
 info5.onclick = function(){
     modal5.style.display = "block"
 }
