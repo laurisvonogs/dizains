@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Specsemināri</title>
+  <link rel="icon" href="images/lu_logo.png">
+  <link rel="stylesheet" href="css/navbar.css">
+  <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body style="background-color:lightgrey;">
+  <div class="navbar">
+    <ul>
+      <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
+      <button type="submit" class="menu-button">
+        <div class="menu-div">
+          <img class="menu" src="images/menu.png" alt="LU logo" height="45">
+          <ul class="submenu">
+            <li>Studiju dati</li>
+            <li>Studiju plāns</li>
+            <li>Lekciju saraksts</li>
+            <li>Sekmes</li>
+            <li class="speceminari">Specsemināri</li>
+            <li>Kursi</li>
+            <li>Dienesta viesnīca</li>
+            <li>Maksājumi</li>
+            <li>Rotācijas rezultāti</li>
+          </ul>
+        </div>
+      </button>
+      <div class="topnav-right">
+        <div class="navBarMenu">
+          <li>Studiju dati</li>
+          <li>Studiju plāns</li>
+          <li>Lekciju saraksts</li>
+          <li>Sekmes</li>
+          <li class="speceminari">Specsemināri</li>
+          <li>Kursi</li>
+          <li>Dienesta viesnīca</li>
+          <li>Maksājumi</li>
+          <li>Rotācijas rezultāti</li>
+        </div>
+        <div class="languages">
+          <li style="font-weight: bold;">LV</li>
+          <li style="color: rgb(160, 179, 161);">ENG</li>
+          <li style="color: rgb(160, 179, 161);">RU</li>
+        </div>
+        <div id="modal-btn" class="user" style="float: right;">
+          <img class="userimg" src="images/img_avatar.png" width="45">
+          <div style="float: right;">
+            <li style="margin-top: -13px;">Solvita Zariņa</li>
+            <li style="font-size: 15px; margin-left: -115px;padding-top: 25px;">(Pasniedzējs)</li>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="centerText">
+    <table id="spec">
+      <tr>
+        <th>Specsemināra nosaukums</th>
+        <th>Docētājs</th>
+        <th>Info</th>
+        <th>Vietu skaits</th>
+        <th>Brīvo vietu skaits</th>
+        <th>Statuss</th>
+        <th>Reģistrēšanās</th>
+      </tr>
+      <tr>
+        <td>Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</td>
+        <td>Prof. J. Borzovs</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info1" width="25"
+            height="25" /></td>
+        <td>20</td>
+        <td id="remaining-1">15</td>
+        <td id="registration-status-1">Nav reģistrējies</td>
+        <td><button type="button" id="button-1" onclick="registerToCourse('1')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Getting things done with Python (specseminārs angļu valodā)</td>
+        <td>Asoc. prof. U.Bojārs, p. V.Saulespurēns</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info2" width="25"
+            height="25" /></td>
+        <td>20</td>
+        <td id="remaining-2">16</td>
+        <td id="registration-status-2">Nav reģistrējies</td>
+        <td><button type="button" id="button-2" onclick="registerToCourse('2')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Atvērtie dati un datu kvalitāte</td>
+        <td>PhD A. Ņikiforova</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info3" width="25"
+            height="25" /></td>
+        <td>10</td>
+        <td id="remaining-3">9</td>
+        <td id="registration-status-3">Nav reģistrējies</td>
+        <td><button type="button" id="button-3" onclick="registerToCourse('3')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Blokķēdes</td>
+        <td>Prof. Ģ. Karnītis</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info4" width="25"
+            height="25" /></td>
+        <td>10</td>
+        <td id="remaining-4">1</td>
+        <td id="registration-status-4">Nav reģistrējies</td>
+        <td><button type="button" id="button-4" onclick="registerToCourse('4')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Eksperimentālās metodes</td>
+        <td>Prof. J. Šķilters, doc. L.Zariņa</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info5" width="25"
+            height="25" /></td>
+        <td>25</td>
+        <td id="remaining-5">23</td>
+        <td id="registration-status-5">Nav reģistrējies</td>
+        <td><button type="button" id="button-5" onclick="registerToCourse('5')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
+        <td>Asoc. prof. S. Zariņa</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info6" width="25"
+            height="25" /></td>
+        <td>10</td>
+        <td id="remaining-6">4</td>
+        <td id="registration-status-6">Nav reģistrējies</td>
+        <td><button type="button" id="button-6" onclick="registerToCourse('6')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Datorikas didaktika</td>
+        <td>V. Vēzis un O. Krūmiņš</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info7" width="25"
+            height="25" /></td>
+        <td>10</td>
+        <td id="remaining-7">10</td>
+        <td id="registration-status-7">Nav reģistrējies</td>
+        <td><button type="button" id="button-7" onclick="registerToCourse('7')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Informācijas sabiedrības attīstības aktualitātes</td>
+        <td>Prof. M. Vītiņš</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info8" width="25"
+            height="25" /></td>
+        <td>15</td>
+        <td id="remaining-8">14</td>
+        <td id="registration-status-8">Nav reģistrējies</td>
+        <td><button type="button" id="button-8" onclick="registerToCourse('8')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>No ‘melnās kastes’ –uz ‘stikla kasti’: izskaidrojamais mākslīgais intelekts</td>
+        <td>M.Sc. M. Ivanovs</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info9" width="25"
+            height="25" /></td>
+        <td>20</td>
+        <td id="remaining-9">15</td>
+        <td id="registration-status-9">Nav reģistrējies</td>
+        <td><button type="button" id="button-9" onclick="registerToCourse('9')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Survival kit of the new, digital era(darba valoda LV un EN)</td>
+        <td>Accenture darbinieki, pieaicināti vieslektori</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info10" width="25"
+            height="25" /></td>
+        <td>20</td>
+        <td id="remaining-10">5</td>
+        <td id="registration-status-10">Nav reģistrējies</td>
+        <td><button type="button" id="button-10" onclick="registerToCourse('10')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>"Kvantu algoritmi”</td>
+        <td>A. Ambainis un A. Belovs</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info11" width="25"
+            height="25" /></td>
+        <td>20</td>
+        <td id="remaining-11">16</td>
+        <td id="registration-status-11">Nav reģistrējies</td>
+        <td><button type="button" id="button-11" onclick="registerToCourse('11')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>"Mūsdienu mākoņdatošanas tehnoloģijas"</td>
+        <td>L.Trukšāns</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info12" width="25"
+            height="25" /></td>
+        <td>20</td>
+        <td id="remaining-12">3</td>
+        <td id="registration-status-12">Nav reģistrējies</td>
+        <td><button type="button" id="button-12" onclick="registerToCourse('12')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Vieslekcijas Datorikas fakultātē</td>
+        <td>Prof. Laila Niedrīte</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info13" width="25"
+            height="25" /></td>
+        <td>25</td>
+        <td id="remaining-13">17</td>
+        <td id="registration-status-13">Nav reģistrējies</td>
+        <td><button type="button" id="button-13" onclick="registerToCourse('13')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Sporta programmēšana</td>
+        <td>Prof. G. Arnicāns</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info14" width="25"
+            height="25" /></td>
+        <td>10</td>
+        <td id="remaining-14">8</td>
+        <td id="registration-status-14">Nav reģistrējies</td>
+        <td><button type="button" id="button-14" onclick="registerToCourse('14')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Drošība un ievainojamības </td>
+        <td>Doc. P.Paikens</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info15" width="25"
+            height="25" /></td>
+        <td>15</td>
+        <td id="remaining-15">15</td>
+        <td id="registration-status-15">Nav reģistrējies</td>
+        <td><button type="button" id="button-15" onclick="registerToCourse('15')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
+        <td>Asoc. prof. S. Zariņa</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info16" width="25"
+            height="25" /></td>
+        <td>20</td>
+        <td id="remaining-16">13</td>
+        <td id="registration-status-16">Nav reģistrējies</td>
+        <td><button type="button" id="button-16" onclick="registerToCourse('16')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Praktiskā datorika</td>
+        <td>Prof. J. Bičevskis, prof. Ģ. Karnītis, asoc.prof. U. Bojārs</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info17" width="25"
+            height="25" /></td>
+        <td>10</td>
+        <td id="remaining-17">3</td>
+        <td id="registration-status-17">Nav reģistrējies</td>
+        <td><button type="button" id="button-17" onclick="registerToCourse('17')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</td>
+        <td>Prof. J. Borzovs</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info18" width="25"
+            height="25" /></td>
+        <td>15</td>
+        <td id="remaining-18">5</td>
+        <td id="registration-status-18">Nav reģistrējies</td>
+        <td><button type="button" id="button-18" onclick="registerToCourse('18')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Informācijas sabiedrības attīstības aktualitātes</td>
+        <td>Prof. M. Vītiņš</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info19" width="25"
+            height="25" /></td>
+        <td>21</td>
+        <td id="remaining-19">8</td>
+        <td id="registration-status-19">Nav reģistrējies</td>
+        <td><button type="button" id="button-19" onclick="registerToCourse('19')">Reģistrēties</button></td>
+      </tr>
+      <tr>
+        <td>Clean Code</td>
+        <td>Asoc. prof. Z. Bičevska, O. Ozols, J. Šķesters</td>
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info20" width="25"
+            height="25" /></td>
+        <td>25</td>
+        <td id="remaining-20">7</td>
+        <td id="registration-status-20">Nav reģistrējies</td>
+        <td><button type="button" id="button-20" onclick="registerToCourse('20')">Reģistrēties</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <footer class="bottom">
+      <br>
+      <a class="oneLine" href="">LU</a>
+      <a class="oneLine" href="">Studentu serviss</a>
+      <a class="oneLine" href="">E-studijas</a>
+      <a class="oneLine" href="">LUIS</a>
+      <a class="oneLine" href="">LU e-pasts</a>
+      <a class="oneLine" href="">Iekšējās kārtības noteikumi studējošiem</a>
+    </footer>
+    <br>
+  </div>
+  <style>
+    /*User detailed view pop up*/
+    .user-container:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column-user {
+      float: left;
+      width: 20%;
+      padding: 10px
+    }
+
+    .column-user:not(:first-child) {
+      float: left;
+      width: 37.5%;
+      padding: 10px
+    }
+
+    .column-user-2 {
+      float: left;
+      width: 50%;
+    }
+
+    .column-user a {
+      text-decoration: none;
+    }
+
+    .column-user button {
+      width: 44%;
+      height: 100px;
+    }
+
+    .column-user:not(:first-child) button {
+      margin-left: 4%;
+    }
+
+    #button-user {
+      background-color: rgb(64, 64, 248);
+      width: 90%;
+    }
+
+    .user-switch button {
+      color: white;
+      font-size: 30px;
+    }
+  </style>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="user-container">
+        <div class="column-user">
+          <img class="userimg" src="images/img_avatar.png" width="200">
+        </div>
+        <div class="column-user">
+          <p style="font-size: 20px;font-weight: bold;margin-top: -10px;">Jānis Bērziņš</p>
+          <p class="column-user-2" style="color: rgb(161, 172, 162);">Personas kods</p>
+          <p class="column-user-2">121298-12345</p>
+          <p class="column-user-2" style="color: rgb(161, 172, 162);">Pilsonība</p>
+          <p class="column-user-2">Latviešu</p>
+          <p class="column-user-2" style="color: rgb(161, 172, 162);">Telefona nr.</p>
+          <p class="column-user-2">28888888</p>
+          <p class="column-user-2" style="color: rgb(161, 172, 162);">Epasts</p>
+          <p class="column-user-2">jberzins@lu.lv</p>
+          <p class="column-user-2" style="color: rgb(161, 172, 162);">Fakultāte</p>
+          <p class="column-user-2">Datorikas</p>
+        </div>
+        <div class="column-user">
+          <div class="column-user-2">
+            <a href="students.html" class="user-switch">
+              <button type="button" id="button-user">
+                <img class="userimg" src="images/img_avatar.png" width="30">Students
+              </button>
+            </a>
+          </div>
+          <div class="column-user-2">
+            <a href="metodike.html" class="user-switch"><button type="button" id="button-user">
+                <img class="userimg" src="images/img_avatar.png" width="30">Metodiķe
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal1" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</p>
+    </div>
+  </div>
+  <div class="modal2" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Getting things done with Python (specseminārs angļu valodā)</p>
+    </div>
+  </div>
+  <div class="modal3" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Atvērtie dati un datu kvalitāte</p>
+    </div>
+  </div>
+  <div class="modal4" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Blokķēdes</p>
+    </div>
+  </div>
+  <div class="modal5" id="mod">
+    <div class="modal-content">
+      <p>Specsemināra laikā studenti apgūs pamata eksperimentālās un korelatīvās metodes un
+        pētījuma dizainus, lai veiktu vienkāršu eksperimentu vai korelatīvu pētījumu (piem.,
+        sekundāro datu apstrādi, automatizētu ikdienas datu analīzi, kā arī aptauju, novērojumu).
+        Eksperimentiem mūsdienu datorzinātņu jomās ir plašs pielietojums, tādējādi
+        specsemināram ir liela pievienotā vērtība.<br>
+        Kursa laikā pamatā notiks praktiska eksperimentu vai korelatīvu pētījumu veidošana (datu
+        vākšana, pētījuma dizaina izstrāde utt) par studentus individuāli vai grupās interesējošām
+        vai kursa pasniedzēju piedāvātām tēmām; taču pirms tā būs dažas nodarbības, kurās tiks
+        izskaidroti eksperimenta pamatprincipi un pamatdizaini. (Piemēram, eksperimenti saskarņu
+        testēšanā.) Vairākas no pamatmetodēm tiks aplūkotas kontekstā ar konkrētiem pētījumiem
+        un eksperimentāliem paņēmieniem (vērtēšanas testi, reakcijas laiki un to analīze,
+        produkcijas uzdevumi u.c.).<br>
+        Ja studentiem būs interese, pievērsīsimies arī acu kustību pieraksta analīzei.
+        Specseminārā būs ieskats arī eksperimentu rezultātu statistiskā analīzē.</p>
+    </div>
+  </div>
+  <div class="modal6" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR “No produktu dizaina līdz lietotāja pieredzes dizainam”</p>
+    </div>
+  </div>
+  <div class="modal7" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Datorikas didaktika</p>
+    </div>
+  </div>
+  <div class="modal8" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Informācijas sabiedrības attīstības aktualitātes</p>
+    </div>
+  </div>
+  <div class="modal9" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR No ‘melnās kastes’ –uz ‘stikla kasti’: izskaidrojamais mākslīgais intelekts</p>
+    </div>
+  </div>
+  <div class="modal10" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Survival kit of the new, digital era(darba valoda LV un EN)</p>
+    </div>
+  </div>
+  <div class="modal10" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR "Kvantu algoritmi”</p>
+    </div>
+  </div>
+  <div class="modal11" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR "Kvantu algoritmi”</p>
+    </div>
+  </div>
+  <div class="modal12" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR "Mūsdienu mākoņdatošanas tehnoloģijas"</p>
+    </div>
+  </div>
+  <div class="modal13" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Vieslekcijas Datorikas fakultātē</p>
+    </div>
+  </div>
+  <div class="modal14" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Sporta programmēšana</p>
+    </div>
+  </div>
+  <div class="modal15" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Drošība un ievainojamības</p>
+    </div>
+  </div>
+  <div class="modal16" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</p>
+    </div>
+  </div>
+  <div class="modal17" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Praktiskā datorika</p>
+    </div>
+  </div>
+  <div class="modal18" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</p>
+    </div>
+  </div>
+  <div class="modal19" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Informācijas sabiedrības attīstības aktualitātes</p>
+    </div>
+  </div>
+  <div class="modal20" id="mod">
+    <div class="modal-content">
+      <p>INFO PAR Clean Code</p>
+    </div>
+  </div>
+
+
+  <style>
+    .centerText {
+      text-align: center;
+    }
+
+    button {
+      background-color: #44c767;
+      border-radius: 28px;
+      border: 1px solid #18ab29;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #2f6627;
+    }
+
+    button:hover {
+      background-color: #5cbf2a;
+    }
+
+    button:active {
+      position: relative;
+      top: 1px;
+    }
+
+    .oneLine {
+      display: inline-block;
+      margin-right: 3px;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+    }
+
+    .oneLine:not(:last-child):after {
+      margin-left: 3px;
+      content: "|";
+    }
+
+    .oneLine:hover {
+      text-decoration: underline;
+    }
+
+    .bottom {
+      text-align: center;
+    }
+
+    #spec {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #spec td,
+    #spec th {
+      border: 1px solid #b6b6b6;
+      padding: 8px;
+    }
+
+    #spec tr:nth-child(even) {
+      background-color: #aec1d4;
+    }
+
+    #spec tr:nth-child(odd) {
+      background-color: #dedede;
+    }
+
+    #spec tr:hover {
+      background-color: #6C77D8;
+    }
+
+    #spec th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #113e73;
+      color: white;
+    }
+  </style>
+  <script type="text/javascript" src="default.js"></script>
+</body>
+
+</html>
