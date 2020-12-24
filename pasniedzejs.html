@@ -10,82 +10,84 @@
 </head>
 
 <body style="background-color:lightgrey;">
-  <div class="navbar">
-    <ul>
-      <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
-      <button type="submit" class="menu-button">
-        <div class="menu-div">
-          <img class="menu" src="images/menu.png" alt="LU logo" height="45">
-          <ul class="submenu">
-            <li>Studiju dati</li>
-            <li>Studiju plāns</li>
+  <div class="content">
+    <div class="navbar">
+      <ul>
+        <img class="logo" src="images/lu_logo.png" alt="LU logo" width="70">
+        <button type="submit" class="menu-button">
+          <div class="menu-div">
+            <img class="menu" src="images/menu.png" alt="LU logo" height="45">
+            <ul class="submenu">
+              <li>Studiju dati</li>
+              <li>Studiju plāns</li>
+              <li>Lekciju grafiks</li>
+              <li>Studentu atzīmes</li>
+              <li class="speceminari">Specsemināri</li>
+              <li>Kursi</li>
+            </ul>
+          </div>
+        </button>
+        <div class="topnav-right">
+          <div class="navBarMenu">
+            <li>Docētāja dati</li>
+            <li>Docētāja darba plāns</li>
             <li>Lekciju grafiks</li>
             <li>Studentu atzīmes</li>
             <li class="speceminari">Specsemināri</li>
             <li>Kursi</li>
-          </ul>
-        </div>
-      </button>
-      <div class="topnav-right">
-        <div class="navBarMenu">
-           <li>Docētāja dati</li>
-           <li>Docētāja darba plāns</li>
-           <li>Lekciju grafiks</li>
-           <li>Studentu atzīmes</li>
-           <li class="speceminari">Specsemināri</li>
-           <li>Kursi</li>
-        </div>
-        <div class="languages">
-          <li style="font-weight: bold;">LV</li>
-          <li style="color: rgb(160, 179, 161);">ENG</li>
-          <li style="color: rgb(160, 179, 161);">RU</li>
-        </div>
-        <div id="modal-btn" class="user" style="float: right;">
-          <img class="userimg" src="images/img_sz.png" width="45">
-          <div style="float: right;">
-            <li style="margin-top: -13px;">Solvita Zariņa</li>
-            <li style="font-size: 15px; margin-left: -115px;padding-top: 25px;">(Pasniedzējs)</li>
+          </div>
+          <div class="languages">
+            <li style="font-weight: bold;">LV</li>
+            <li style="color: rgb(160, 179, 161);">ENG</li>
+            <li style="color: rgb(160, 179, 161);">RU</li>
+          </div>
+          <div id="modal-btn" class="user" style="float: right;">
+            <img class="userimg" src="images/img_sz.png" width="45">
+            <div style="float: right;">
+              <li style="margin-top: -13px;">Solvita Zariņa</li>
+              <li style="font-size: 15px; margin-left: -115px;padding-top: 25px;">(Pasniedzējs)</li>
+            </div>
           </div>
         </div>
-      </div>
-    </ul>
-  </div>
+      </ul>
+    </div>
 
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
 
-  <div class="centerText">
-    <table id="spec">
-      <tr>
-        <th>Specsemināra nosaukums</th>
-        <th>Studentu saraksts</th>
-        <th>Pieteikšana</th>
-      </tr>
-      <tr>
-        <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
-        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info1" width="25"
-            height="25" /></td>
-        <td><button type="button" id="button-1" onclick="registerToCourse('1')">Pieteikt specseminaru</button></td>
-      </tr>
-      <tr>
-        <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
-                <td><input type="image" src="images/i.png" name="studentList" class="btTxt submit" id="info2" width="25"
-            height="25" /></td>
-        <td><button type="button" id="button-2" onclick="registerToCourse('2')">Pieteikt specseminaru</button></td>
-      </tr>
-    </table>
+    <div class="centerText">
+      <table id="spec">
+        <tr>
+          <th>Specsemināra nosaukums</th>
+          <th>Studentu saraksts</th>
+          <th>Pieteikšana</th>
+        </tr>
+        <tr>
+          <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
+          <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info1" width="25"
+              height="25" /></td>
+          <td><button type="button" id="button-1" onclick="registerToCourse('1')">Pieteikt specseminaru</button></td>
+        </tr>
+        <tr>
+          <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
+                  <td><input type="image" src="images/i.png" name="studentList" class="btTxt submit" id="info2" width="25"
+              height="25" /></td>
+          <td><button type="button" id="button-2" onclick="registerToCourse('2')">Pieteikt specseminaru</button></td>
+        </tr>
+      </table>
+    </div>
   </div>
 
   <div>
     <footer class="bottom">
       <br>
       <a class="oneLine" href="https://www.lu.lv/">LU</a>
-      <a class="oneLine" href="https://www.lu.lv/par-mums/administracija/departamenti/studentu-servisu-departaments/">Studentu serviss</a>
+      <a class="oneLine" href="https://www.lu.lv/par-mums/administracija/departamenti/studentu-servisu-departaments/">LU darbinieku serviss</a>
       <a class="oneLine" href="https://estudijas.lu.lv/index.php?lang=lv_utf8">E-studijas</a>
       <a class="oneLine" href="https://luis.lu.lv/">LUIS</a>
       <a class="oneLine" href="https://webmails.lu.lv/">LU e-pasts</a>
-      <a class="oneLine" href="https://www.lu.lv/par-mums/dokumenti/latvijas-universitates-ieksejas-kartibas-noteikumi-studejosajiem/">Iekšējās kārtības noteikumi studējošiem</a>
+      <a class="oneLine" href="https://www.lu.lv/par-mums/dokumenti/latvijas-universitates-ieksejas-kartibas-noteikumi-studejosajiem/">Iekšējās kārtības noteikumi LU darbiniekiem</a>
     </footer>
     <br>
   </div>
@@ -212,7 +214,12 @@
 			<td class="centerText"><input type="checkbox" name="register"></td>
 		  </tr>
 		 </table>
-		 <input type="submit" value="Apstiprināt">
+		 <table>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Apstiprināt"></td>
+      </tr>
+    </table>
 		<form> 
     </div>
   </div>
@@ -253,12 +260,43 @@
 			<td>Roland Mendel</td>
 			<td class="centerText"><input type="checkbox" name="register"></td>
 		  </tr>
-		 </table>
-		 <input type="submit" value="Apstiprināt">
+     </table>
+     <table>
+       <tr>
+         <td></td>
+         <td><input type="submit" value="Apstiprināt"></td>
+       </tr>
+     </table>
 		<form> 
     </div>
 
   <style>
+    #mod td {
+      width: 300px;
+      text-align: center;
+    }
+
+    .subbut {
+      padding-bottom: 2em;
+      margin-right: 4em;
+      float: right;
+    }
+
+    #mod input {
+      background-color:  #0563AF;
+      color: white;
+      border: none;
+      padding: 0.25em 0.5em;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-left: 2em;
+    }
+
+    #mod input:hover {
+      background-color:  #113e73;
+      cursor: pointer;
+    }
+
     .centerText {
       text-align: center;
     }
@@ -332,6 +370,15 @@
       padding-bottom: 12px;
       background-color: #113e73;
       color: white;
+    }
+    
+    .content {
+      min-height: calc(100vh - 70px);
+    }
+
+    .bottom {
+      text-align: center;
+      height: 50px;
     }
   </style>
   <script type="text/javascript" src="default.js"></script>
