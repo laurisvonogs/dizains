@@ -64,13 +64,13 @@
       </tr>
       <tr>
         <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
-        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info2" width="25"
+        <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info1" width="25"
             height="25" /></td>
         <td><button type="button" id="button-1" onclick="registerToCourse('1')">Pieteikt specseminaru</button></td>
       </tr>
       <tr>
         <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
-                <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info2" width="25"
+                <td><input type="image" src="images/i.png" name="studentList" class="btTxt submit" id="info2" width="25"
             height="25" /></td>
         <td><button type="button" id="button-2" onclick="registerToCourse('2')">Pieteikt specseminaru</button></td>
       </tr>
@@ -176,125 +176,87 @@
       </div>
     </div>
   </div>
+  
+  <!-- Attiecas uz pirmo seminaru -->
   <div class="modal1" id="mod">
     <div class="modal-content">
-      <p>INFO PAR Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</p>
+      <h2>Pieteikušo studentu sarakts</h2>
+	  <form>
+		<table>
+		  <tr>
+			<th>Studentu saraksts</th>
+			<th>Pieteikt</th>
+		  </tr>
+		  <tr>
+			<td>Alfreds Futterkiste</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Centro Moctezuma</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Ernst Handel</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Maria Anders</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Francisco Chang</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Roland Mendel</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		 </table>
+		 <input type="submit" value="Apstiprināt">
+		<form> 
     </div>
   </div>
+  
+  
+  
+  <!-- Attiecas uz otro seminaru -->
   <div class="modal2" id="mod">
     <div class="modal-content">
-      <p>INFO PAR Getting things done with Python (specseminārs angļu valodā)</p>
+      <h2>Pieteikušo studentu sarakts</h2>
+	  <form>
+		<table>
+		  <tr>
+			<th>Studentu saraksts</th>
+			<th>Pieteikt</th>
+		  </tr>
+		  <tr>
+			<td>Alfreds Futterkiste</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Centro Moctezuma</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Ernst Handel</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Maria Anders</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Francisco Chang</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		  <tr>
+			<td>Roland Mendel</td>
+			<td class="centerText"><input type="checkbox" name="register"></td>
+		  </tr>
+		 </table>
+		 <input type="submit" value="Apstiprināt">
+		<form> 
     </div>
-  </div>
-  <div class="modal3" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Atvērtie dati un datu kvalitāte</p>
-    </div>
-  </div>
-  <div class="modal4" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Blokķēdes</p>
-    </div>
-  </div>
-  <div class="modal5" id="mod">
-    <div class="modal-content">
-      <p>Specsemināra laikā studenti apgūs pamata eksperimentālās un korelatīvās metodes un
-        pētījuma dizainus, lai veiktu vienkāršu eksperimentu vai korelatīvu pētījumu (piem.,
-        sekundāro datu apstrādi, automatizētu ikdienas datu analīzi, kā arī aptauju, novērojumu).
-        Eksperimentiem mūsdienu datorzinātņu jomās ir plašs pielietojums, tādējādi
-        specsemināram ir liela pievienotā vērtība.<br>
-        Kursa laikā pamatā notiks praktiska eksperimentu vai korelatīvu pētījumu veidošana (datu
-        vākšana, pētījuma dizaina izstrāde utt) par studentus individuāli vai grupās interesējošām
-        vai kursa pasniedzēju piedāvātām tēmām; taču pirms tā būs dažas nodarbības, kurās tiks
-        izskaidroti eksperimenta pamatprincipi un pamatdizaini. (Piemēram, eksperimenti saskarņu
-        testēšanā.) Vairākas no pamatmetodēm tiks aplūkotas kontekstā ar konkrētiem pētījumiem
-        un eksperimentāliem paņēmieniem (vērtēšanas testi, reakcijas laiki un to analīze,
-        produkcijas uzdevumi u.c.).<br>
-        Ja studentiem būs interese, pievērsīsimies arī acu kustību pieraksta analīzei.
-        Specseminārā būs ieskats arī eksperimentu rezultātu statistiskā analīzē.</p>
-    </div>
-  </div>
-  <div class="modal6" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR “No produktu dizaina līdz lietotāja pieredzes dizainam”</p>
-    </div>
-  </div>
-  <div class="modal7" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Datorikas didaktika</p>
-    </div>
-  </div>
-  <div class="modal8" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Informācijas sabiedrības attīstības aktualitātes</p>
-    </div>
-  </div>
-  <div class="modal9" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR No ‘melnās kastes’ –uz ‘stikla kasti’: izskaidrojamais mākslīgais intelekts</p>
-    </div>
-  </div>
-  <div class="modal10" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Survival kit of the new, digital era(darba valoda LV un EN)</p>
-    </div>
-  </div>
-  <div class="modal10" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR "Kvantu algoritmi”</p>
-    </div>
-  </div>
-  <div class="modal11" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR "Kvantu algoritmi”</p>
-    </div>
-  </div>
-  <div class="modal12" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR "Mūsdienu mākoņdatošanas tehnoloģijas"</p>
-    </div>
-  </div>
-  <div class="modal13" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Vieslekcijas Datorikas fakultātē</p>
-    </div>
-  </div>
-  <div class="modal14" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Sporta programmēšana</p>
-    </div>
-  </div>
-  <div class="modal15" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Drošība un ievainojamības</p>
-    </div>
-  </div>
-  <div class="modal16" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</p>
-    </div>
-  </div>
-  <div class="modal17" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Praktiskā datorika</p>
-    </div>
-  </div>
-  <div class="modal18" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</p>
-    </div>
-  </div>
-  <div class="modal19" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Informācijas sabiedrības attīstības aktualitātes</p>
-    </div>
-  </div>
-  <div class="modal20" id="mod">
-    <div class="modal-content">
-      <p>INFO PAR Clean Code</p>
-    </div>
-  </div>
-
 
   <style>
     .centerText {
