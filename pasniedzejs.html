@@ -66,7 +66,7 @@
         <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
         <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info1" width="25"
             height="25" /></td>
-        <td><button type="button" id="button-1" onclick="registerToCourse('1')">Pieteikt specseminaru</button></td>
+        <td><button type="button" id="button-1" onclick="checkCount('2')">Pieteikt specseminaru</button></td>
       </tr>
       <tr>
         <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
@@ -181,7 +181,6 @@
   <div class="modal1" id="mod">
     <div class="modal-content">
       <h2>Pieteikušo studentu sarakts</h2>
-	  <form>
 		<table>
 		  <tr>
 			<th>Studentu saraksts</th>
@@ -189,33 +188,33 @@
 		  </tr>
 		  <tr>
 			<td>Alfreds Futterkiste</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-1"></td>
 		  </tr>
 		  <tr>
 			<td>Centro Moctezuma</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-1"></td>
 		  </tr>
 		  <tr>
 			<td>Ernst Handel</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-1"></td>
 		  </tr>
 		  <tr>
 			<td>Maria Anders</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-1"></td>
 		  </tr>
 		  <tr>
 			<td>Francisco Chang</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-1"></td>
 		  </tr>
 		  <tr>
 			<td>Roland Mendel</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-1"></td>
 		  </tr>
 		 </table>
-		 <input type="submit" value="Apstiprināt">
-		<form> 
+		 <input type="submit" value="Apstiprināt" onclick="studentCount('1','2')">
     </div>
   </div>
+  <p hidden id="register-1-count"></p>
   
   
   
@@ -231,27 +230,27 @@
 		  </tr>
 		  <tr>
 			<td>Alfreds Futterkiste</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-2"></td>
 		  </tr>
 		  <tr>
 			<td>Centro Moctezuma</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-2"></td>
 		  </tr>
 		  <tr>
 			<td>Ernst Handel</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-2"></td>
 		  </tr>
 		  <tr>
 			<td>Maria Anders</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-2"></td>
 		  </tr>
 		  <tr>
 			<td>Francisco Chang</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-2"></td>
 		  </tr>
 		  <tr>
 			<td>Roland Mendel</td>
-			<td class="centerText"><input type="checkbox" name="register"></td>
+			<td class="centerText"><input type="checkbox" name="register-2"></td>
 		  </tr>
 		 </table>
 		 <input type="submit" value="Apstiprināt">

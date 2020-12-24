@@ -216,3 +216,27 @@ function registerToCourse(number) {
     document.getElementById(`remaining-${number}`).innerHTML = remaining + 1;
   }
 }
+
+function studentCount(number) {
+  var x = document.getElementsByName(`register-${number}`);
+  var count = 0;
+  for (i = 0; i < x.length; i++) {
+    if (x[i].checked) {
+      count++;
+    }
+  }
+  document.getElementById(`register-${number}-count`).innerHTML = count;
+  alert(count);
+  document.getElementsByClassName('modal1')[0].style.display = "none"
+}
+
+function checkCount(register,number) {
+  var count = document.getElementById(`register-${register}-count`).value;
+  alert(count);
+  if (count > number) {
+    alert("Good");
+  }
+  else {
+    alert("Bad");
+  }
+}
