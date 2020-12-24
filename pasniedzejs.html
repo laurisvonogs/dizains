@@ -67,13 +67,13 @@
           <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
           <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info1" width="25"
               height="25" /></td>
-          <td><button type="button" id="button-1" onclick="pieteikt1('1')">Pieteikt specseminaru</button></td>
+          <td><button type="button" id="button-1" onclick="checkCount('1','2')">Pieteikt specseminaru</button></td>
         </tr>
         <tr>
           <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
                   <td><input type="image" src="images/i.png" name="studentList" class="btTxt submit" id="info2" width="25"
               height="25" /></td>
-          <td><button type="button" id="button-2" onclick="pieteikt2('2')">Pieteikt specseminaru</button></td>
+          <td><button type="button" id="button-2" onclick="checkCount('2','3')">Pieteikt specseminaru</button></td>
         </tr>
       </table>
     </div>
@@ -216,13 +216,12 @@
 		 <table>
       <tr>
         <td></td>
-        <td><input type="submit" value="Apstiprināt"></td>
+        <td><input type="submit" value="Apstiprināt" onclick="studentCount('1')"></td>
       </tr>
     </table>
-		<form> 
     </div>
   </div>
-  <p hidden id="register-1-count"></p>
+  <p hidden id="register-1-count">0</p>
   
   
   
@@ -230,7 +229,6 @@
   <div class="modal2" id="mod">
     <div class="modal-content">
       <h2>Pieteikušo studentu sarakts</h2>
-	  <form>
 		<table>
 		  <tr>
 			<th>Studentu saraksts</th>
@@ -264,11 +262,11 @@
      <table>
        <tr>
          <td></td>
-         <td><input type="submit" value="Apstiprināt"></td>
+         <td><input type="submit" value="Apstiprināt"  onclick="studentCount('2')"></td>
        </tr>
      </table>
-		<form> 
     </div>
+    <p hidden id="register-2-count">0</p>
 
   <style>
     #mod td {

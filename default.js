@@ -226,17 +226,16 @@ function studentCount(number) {
     }
   }
   document.getElementById(`register-${number}-count`).innerHTML = count;
-  alert(count);
   document.getElementsByClassName('modal1')[0].style.display = "none"
 }
 
 function checkCount(register,number) {
-  var count = document.getElementById(`register-${register}-count`).value;
-  alert(count);
-  if (count > number) {
-    alert("Good");
+  var count = document.getElementById(`register-${register}-count`).innerHTML;
+  if (count >= number) {
+    var button1 = document.getElementById("button-1");
+    button1.innerHTML = "Specseminars pieteikts";
   }
   else {
-    alert("Bad");
+    alert(`Vajag vismaz ${number} studentus`);
   }
 }
