@@ -73,8 +73,8 @@
                     <th></th>
                 </tr>
                 <tr>
-                    <td>Eksperimentālās metodes</td>
-                    <td>Prof. J. Šķilters</td>
+                    <td>Eksperimentālās metodes <a href="#">Apraksts</a></td>
+                    <td><img src="images/img_js.png" alt="J.S." width="50" height="50"><br>Prof. J. Šķilters</td>
                     <td>10</td>
                     <td>
                         <div class="box">
@@ -92,8 +92,8 @@
                     <td><button type="button" id="button-1" onclick="registerToCourse('1')">Reģistrēt estudijās</button></td>
                 </tr>
                 <tr>
-                    <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
-                    <td>Asoc. prof. S. Zariņa</td>
+                    <td>“No produktu dizaina līdz lietotāja pieredzes dizainam” <a href="#">Apraksts</a></td>
+                    <td><img src="images/img_sz.png" alt="S.Z." width="50" height="50"><br>Asoc. prof. S. Zariņa</td>
                     <td>6</td>
                     <td>
                         <div class="box">
@@ -111,8 +111,8 @@
                     <td><button type="button" id="button-2" onclick="registerToCourse('2')">Reģistrēt estudijās</button></td>
                 </tr>
                 <tr>
-                    <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
-                    <td>Asoc. prof. S. Zariņa</td>
+                    <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam <a href="#">Apraksts</a></td>
+                    <td><img src="images/img_sz.png" alt="S.Z." width="50" height="50"><br>Asoc. prof. S. Zariņa</td>
                     <td>13</td>
                     <td id="audit3">
                         <div class="box">
@@ -312,6 +312,24 @@
             padding-bottom: 12px;
             background-color: #113e73;
             color: white;
+        }
+
+        td img
+        {
+            float:top;
+        }
+
+        /*anchor styling*/
+        td a {
+            background-color:  #0563AF;
+            color: white;
+            padding: 0.25em 0.5em;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        td a:active {
+            background-color:  #113e73;
         }
     </style>
     <script>
