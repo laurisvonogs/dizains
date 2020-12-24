@@ -67,13 +67,13 @@
           <td>“No produktu dizaina līdz lietotāja pieredzes dizainam”</td>
           <td><input type="image" src="images/i.png" name="saveForm" class="btTxt submit" id="info1" width="25"
               height="25" /></td>
-          <td><button type="button" id="button-1" onclick="registerToCourse('1')">Pieteikt specseminaru</button></td>
+          <td><button type="button" id="button-1" onclick="pieteikt1('1')">Pieteikt specseminaru</button></td>
         </tr>
         <tr>
           <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam</td>
                   <td><input type="image" src="images/i.png" name="studentList" class="btTxt submit" id="info2" width="25"
               height="25" /></td>
-          <td><button type="button" id="button-2" onclick="registerToCourse('2')">Pieteikt specseminaru</button></td>
+          <td><button type="button" id="button-2" onclick="pieteikt2('2')">Pieteikt specseminaru</button></td>
         </tr>
       </table>
     </div>
@@ -382,6 +382,23 @@
     }
   </style>
   <script type="text/javascript" src="default.js"></script>
+
+  <script>
+    function pieteikt1() {
+      var button1 = document.getElementById("button-1");
+        if (button1.innerHTML == "Pieteikt specseminaru")
+        {
+            button1.innerHTML = "Specseminars pieteikts";
+        }
+    }
+    function pieteikt2() {
+      var button2 = document.getElementById("button-2");
+        if (button2.innerHTML == "Pieteikt specseminaru")
+        {
+            button2.innerHTML = "Specseminars pieteikts";
+        }
+    }
+  </script>
 </body>
 
 </html>
