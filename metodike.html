@@ -73,7 +73,7 @@
                     <th></th>
                 </tr>
                 <tr>
-                    <td>Eksperimentālās metodes <a href="#">Apraksts</a></td>
+                    <td>Eksperimentālās metodes <a href="#" id="info1">Apraksts</a></td>
                     <td><img src="images/img_js.png" alt="J.S." width="50" height="50"><br>Prof. J. Šķilters</td>
                     <td>10</td>
                     <td>
@@ -92,7 +92,7 @@
                     <td><button type="button" id="button-1" onclick="registerToCourse('1')">Reģistrēt estudijās</button></td>
                 </tr>
                 <tr>
-                    <td>“No produktu dizaina līdz lietotāja pieredzes dizainam” <a href="#">Apraksts</a></td>
+                    <td>“No produktu dizaina līdz lietotāja pieredzes dizainam” <a href="#" id="info2">Apraksts</a></td>
                     <td><img src="images/img_sz.png" alt="S.Z." width="50" height="50"><br>Asoc. prof. S. Zariņa</td>
                     <td>6</td>
                     <td>
@@ -111,7 +111,7 @@
                     <td><button type="button" id="button-2" onclick="registerToCourse('2')">Reģistrēt estudijās</button></td>
                 </tr>
                 <tr>
-                    <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam <a href="#">Apraksts</a></td>
+                    <td>No modernās līdz laikmetīgajai mākslai, no dizaina līdz tīmekļa dizainam <a href="#" id="info3">Apraksts</a></td>
                     <td><img src="images/img_sz.png" alt="S.Z." width="50" height="50"><br>Asoc. prof. S. Zariņa</td>
                     <td>13</td>
                     <td id="audit3">
@@ -232,6 +232,26 @@
         </div>
     </div>
 
+    <div class="modal1" id="mod">
+        <div class="modal-content">
+          <p>Specsemināra laikā studenti apgūs pamata eksperimentālās un korelatīvās metodes un
+            pētījuma dizainus, lai veiktu vienkāršu eksperimentu vai korelatīvu pētījumu (piem.,
+            sekundāro datu apstrādi, automatizētu ikdienas datu analīzi, kā arī aptauju, novērojumu).
+            Eksperimentiem mūsdienu datorzinātņu jomās ir plašs pielietojums, tādējādi
+            specsemināram ir liela pievienotā vērtība.<br>
+            Kursa laikā pamatā notiks praktiska eksperimentu vai korelatīvu pētījumu veidošana (datu
+            vākšana, pētījuma dizaina izstrāde utt) par studentus individuāli vai grupās interesējošām
+            vai kursa pasniedzēju piedāvātām tēmām; taču pirms tā būs dažas nodarbības, kurās tiks
+            izskaidroti eksperimenta pamatprincipi un pamatdizaini. (Piemēram, eksperimenti saskarņu
+            testēšanā.) Vairākas no pamatmetodēm tiks aplūkotas kontekstā ar konkrētiem pētījumiem
+            un eksperimentāliem paņēmieniem (vērtēšanas testi, reakcijas laiki un to analīze,
+            produkcijas uzdevumi u.c.).<br>
+            Ja studentiem būs interese, pievērsīsimies arī acu kustību pieraksta analīzei.
+            Specseminārā būs ieskats arī eksperimentu rezultātu statistiskā analīzē.<br>
+            Pilns apraksts pieejams: <a href="https://www.df.lu.lv/studijas/bakalaura-un-koledzasstudijas/specseminari/">LU DF Specsemināru lapā</a>
+            </p>
+        </div>
+      </div>
 
     <style>
         .centerText {
@@ -363,6 +383,22 @@
             if(e.target == modal){
                 modal.style.display = "none"
             }
+            if(e.target == modal1){
+                modal1.style.display = "none"
+            }
+        }
+        let info1 = document.getElementById("info1");
+        let info2 = document.getElementById("info2");
+        let info3 = document.getElementById("info3");
+        let modal1 = document.querySelector(".modal1");
+        info1.onclick = function(){
+            modal1.style.display = "block"
+        }
+        info2.onclick = function(){
+            modal1.style.display = "block"
+        }
+        info3.onclick = function(){
+            modal1.style.display = "block"
         }
     </script>
 </body>
